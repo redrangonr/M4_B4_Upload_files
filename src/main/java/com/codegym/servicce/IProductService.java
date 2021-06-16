@@ -1,0 +1,13 @@
+package com.codegym.servicce;
+
+import com.codegym.model.Product;
+
+import java.util.List;
+
+public interface IProductService {
+    List<Product> findAll();
+    void save(Product product);
+    Product findById(int id);
+    void updeate(int id ,Product product);
+    void remove(int id);
+}
